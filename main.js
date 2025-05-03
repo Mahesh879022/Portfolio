@@ -1,30 +1,3 @@
-// WebGL Background with Three.js
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ alpha: true });
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.getElementById('webgl-bg').appendChild(renderer.domElement);
-
-const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
-const material = new THREE.MeshBasicMaterial({ color: 0x3b82f6, wireframe: true });
-const torusKnot = new THREE.Mesh(geometry, material);
-scene.add(torusKnot);
-camera.position.z = 30;
-
-function animate() {
-  requestAnimationFrame(animate);
-  torusKnot.rotation.x += 0.01;
-  torusKnot.rotation.y += 0.01;
-  renderer.render(scene, camera);
-}
-animate();
-
-window.addEventListener('resize', () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-});
-
 // Theme Toggle
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
@@ -32,14 +5,12 @@ themeToggle.addEventListener('click', () => {
   body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
   localStorage.setItem('theme', body.dataset.theme);
   themeToggle.innerHTML = body.dataset.theme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-  material.color.setHex(body.dataset.theme === 'dark' ? 0x60a5fa : 0x3b82f6);
 });
 
 // Load Theme
 if (localStorage.getItem('theme') === 'dark') {
   body.dataset.theme = 'dark';
   themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-  material.color.setHex(0x60a5fa);
 }
 
 // Smooth Scrolling
@@ -142,3 +113,6 @@ document.getElementById('contactForm').addEventListener('submit', e => {
     alert('Please fill all fields correctly.');
   }
 });
+
+// Log Page Load
+console.log('Portfolio page loaded');
