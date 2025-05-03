@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Mahesh Babu Akula, a Software Engineer specializing in scalable web applications, microservices, and cloud infrastructure.">
+  <meta name="description" content="Portfolio of Mahesh Babu Akula, Software Engineer specializing in scalable web applications, microservices, and cloud solutions.">
   <meta name="keywords" content="Mahesh Babu Akula, Software Engineer, React, Spring Boot, AWS, Microservices, Portfolio">
   <meta name="author" content="Mahesh Babu Akula">
   <title>Mahesh Babu Akula - Software Engineer Portfolio</title>
@@ -28,6 +28,11 @@
     <i class="fas fa-moon"></i>
   </button>
 
+  <!-- Voice Command Button -->
+  <button class="voice-command" id="voiceCommand" aria-label="Voice command">
+    <i class="fas fa-microphone"></i>
+  </button>
+
   <!-- Navbar -->
   <nav class="navbar">
     <h1 class="logo">Mahesh Babu Akula</h1>
@@ -43,6 +48,7 @@
       <a href="#contributions">Contributions</a>
       <a href="#blog">Blog</a>
       <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </div>
@@ -51,9 +57,9 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <img src="assets/profile.jpeg" alt="Profile picture of Mahesh Babu Akula" class="profile-img">
+      <img src="assets/profile.jpeg" alt="Profile picture of Mahesh Babu Akula" class="profile-img" onerror="this.src='assets/placeholder.png'">
       <h2>Mahesh Babu Akula</h2>
-      <p class="typewriter">Crafting <span class="highlight">scalable, innovative</span> software solutions.</p>
+      <p class="typewriter">Building <span class="highlight">scalable, innovative</span> software solutions.</p>
       <a href="#projects" class="cta-button">Explore My Work</a>
     </div>
   </section>
@@ -61,7 +67,7 @@
   <!-- About Section -->
   <section id="about" class="section">
     <h3>About Me</h3>
-    <p>I’m a Software Engineer with over 4 years of experience building scalable web applications, microservices architectures, and cloud-based solutions. Specializing in React, Spring Boot, and AWS, I’m passionate about writing clean, efficient code and solving complex problems to deliver seamless user experiences. My goal is to create technology that empowers businesses and enhances lives.</p>
+    <p>I’m a dedicated Software Engineer with 4+ years of experience in designing and developing scalable web applications, microservices architectures, and cloud-based solutions. Proficient in React, Spring Boot, AWS, and Kubernetes, I focus on clean code, performance optimization, and delivering exceptional user experiences. My passion lies in solving real-world problems through technology and driving innovation in every project I undertake.</p>
   </section>
 
   <!-- Services Section -->
@@ -70,35 +76,63 @@
     <div class="services-grid">
       <div class="service-card">
         <i class="fas fa-code"></i>
-        <h4>Web Development</h4>
-        <p>Building responsive, high-performance web applications with React and Node.js.</p>
+        <h4>Full-Stack Development</h4>
+        <p>End-to-end web applications with React, Node.js, and Spring Boot.</p>
       </div>
       <div class="service-card">
         <i class="fas fa-cloud"></i>
-        <h4>Cloud Architecture</h4>
-        <p>Designing and deploying scalable cloud solutions using AWS and Docker.</p>
+        <h4>Cloud Solutions</h4>
+        <p>Scalable infrastructure with AWS, Docker, and Kubernetes.</p>
       </div>
       <div class="service-card">
         <i class="fas fa-lock"></i>
         <h4>Secure APIs</h4>
-        <p>Developing secure, RESTful APIs with Spring Boot and JWT authentication.</p>
+        <p>Robust, secure APIs with Spring Security and JWT.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-cogs"></i>
+        <h4>DevOps</h4>
+        <p>Automated CI/CD pipelines with Jenkins and AWS CodePipeline.</p>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills Section with Progress Bars -->
   <section id="skills" class="section">
     <h3>Technical Skills</h3>
     <div class="skills-grid">
-      <div class="skill-card" data-skill="React"><i class="fab fa-react"></i> React</div>
-      <div class="skill-card" data-skill="Spring Boot"><i class="fas fa-leaf"></i> Spring Boot</div>
-      <div class="skill-card" data-skill="AWS"><i class="fab fa-aws"></i> AWS</div>
-      <div class="skill-card" data-skill="JavaScript"><i class="fab fa-js"></i> JavaScript</div>
-      <div class="skill-card" data-skill="Node.js"><i class="fab fa-node"></i> Node.js</div>
-      <div class="skill-card" data-skill="Docker"><i class="fab fa-docker"></i> Docker</div>
-      <div class="skill-card" data-skill="PostgreSQL"><i class="fas fa-database"></i> PostgreSQL</div>
-      <div class="skill-card" data-skill="Kubernetes"><i class="fas fa-cubes"></i> Kubernetes</div>
-      <div class="skill-card" data-skill="Git"><i class="fab fa-git-alt"></i> Git</div>
+      <div class="skill-card">
+        <i class="fab fa-react"></i> React
+        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-leaf"></i> Spring Boot
+        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-aws"></i> AWS
+        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js"></i> JavaScript
+        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-node"></i> Node.js
+        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-docker"></i> Docker
+        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i> PostgreSQL
+        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-cubes"></i> Kubernetes
+        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+      </div>
     </div>
   </section>
 
@@ -107,20 +141,20 @@
     <h3>My Journey in Numbers</h3>
     <div class="stats-grid">
       <div class="stat-card">
-        <h4>4+</h4>
+        <h4 data-count="4">0</h4>
         <p>Years of Experience</p>
       </div>
       <div class="stat-card">
-        <h4>12+</h4>
+        <h4 data-count="15">0</h4>
         <p>Projects Completed</p>
       </div>
       <div class="stat-card">
-        <h4>3</h4>
+        <h4 data-count="3">0</h4>
         <p>Certifications</p>
       </div>
       <div class="stat-card">
-        <h4>100%</h4>
-        <p>Client Satisfaction</p>
+        <h4 data-count="100">0</h4>
+        <p>Client Satisfaction (%)</p>
       </div>
     </div>
   </section>
@@ -132,12 +166,17 @@
       <div class="timeline-item">
         <h4>Software Engineer - [Tech Corp]</h4>
         <p><em>Jan 2022 - Present</em></p>
-        <p>Architected and developed a microservices-based e-commerce platform using Spring Boot, React, and AWS. Implemented CI/CD pipelines and reduced latency by 30% through API optimization.</p>
+        <p>Led development of a microservices-based e-commerce platform using Spring Boot, React, and AWS. Optimized APIs for 30% faster response times and implemented CI/CD pipelines.</p>
       </div>
       <div class="timeline-item">
         <h4>Junior Software Engineer - [Innovate Solutions]</h4>
         <p><em>Jun 2020 - Dec 2021</em></p>
-        <p>Built backend services with Java and Spring Boot, integrated AWS Cognito for authentication, and optimized PostgreSQL queries for a high-traffic application.</p>
+        <p>Developed backend services with Java and Spring Boot. Integrated AWS Cognito for secure authentication and improved database performance with PostgreSQL indexing.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Software Intern - [Startup Inc.]</h4>
+        <p><em>Jan 2020 - May 2020</em></p>
+        <p>Built a prototype web app with React and Node.js, contributing to the company’s MVP launch.</p>
       </div>
     </div>
   </section>
@@ -148,7 +187,7 @@
     <div class="education-item">
       <h4>B.Tech in Computer Science</h4>
       <p><em>[University Name], [City] - 2016-2020</em></p>
-      <p>Focused on software engineering, cloud computing, and distributed systems.</p>
+      <p>Specialized in software engineering, cloud computing, and distributed systems.</p>
     </div>
     <div class="education-item">
       <h4>Certifications</h4>
@@ -172,18 +211,23 @@
     <div class="projects-grid">
       <div class="project-card" data-category="web cloud">
         <h4>Microservices E-Commerce Platform</h4>
-        <p>A scalable e-commerce platform with Spring Boot microservices, React UI, and AWS CI/CD pipelines. Integrated Stripe for payments and Elasticsearch for search.</p>
+        <p>A scalable e-commerce platform with Spring Boot microservices, React UI, AWS CI/CD, and Stripe integration.</p>
         <button class="project-details" data-modal="project1">View Details</button>
       </div>
       <div class="project-card" data-category="web security">
         <h4>Secure Authentication System</h4>
-        <p>Developed a secure authentication system with Spring Security, AWS Cognito, and JWT-based authorization for real-time user management.</p>
+        <p>A secure auth system with Spring Security, AWS Cognito, and JWT for real-time user management.</p>
         <button class="project-details" data-modal="project2">View Details</button>
       </div>
       <div class="project-card" data-category="web">
         <h4>Task Management App</h4>
-        <p>A full-stack task management app built with React, Node.js, and MongoDB, featuring real-time updates with WebSocket.</p>
+        <p>A real-time task app with React, Node.js, MongoDB, and WebSocket for live updates.</p>
         <button class="project-details" data-modal="project3">View Details</button>
+      </div>
+      <div class="project-card" data-category="cloud">
+        <h4>Serverless Data Pipeline</h4>
+        <p>A serverless data processing pipeline using AWS Lambda, S3, and DynamoDB.</p>
+        <button class="project-details" data-modal="project4">View Details</button>
       </div>
     </div>
   </section>
@@ -193,7 +237,7 @@
     <div class="modal-content">
       <span class="close">×</span>
       <h4>Microservices E-Commerce Platform</h4>
-      <p>Built a scalable e-commerce platform with Spring Boot microservices, React frontend, and AWS infrastructure. Features include product catalog, secure payments, and automated deployments.</p>
+      <p>Developed a scalable e-commerce platform with Spring Boot microservices, React frontend, and AWS infrastructure. Includes payment integration and Elasticsearch for search.</p>
       <a href="https://github.com/Mahesh879022/ecommerce" target="_blank" class="cta-button">View on GitHub</a>
     </div>
   </div>
@@ -201,7 +245,7 @@
     <div class="modal-content">
       <span class="close">×</span>
       <h4>Secure Authentication System</h4>
-      <p>Implemented a secure authentication system with Spring Security and AWS Cognito, supporting real-time user management and JWT tokens.</p>
+      <p>Built a secure authentication system with Spring Security and AWS Cognito, supporting JWT and real-time user management.</p>
       <a href="https://github.com/Mahesh879022/auth-system" target="_blank" class="cta-button">View on GitHub</a>
     </div>
   </div>
@@ -209,8 +253,16 @@
     <div class="modal-content">
       <span class="close">×</span>
       <h4>Task Management App</h4>
-      <p>A real-time task management app with React, Node.js, and MongoDB. Utilizes WebSocket for live updates and includes user authentication.</p>
+      <p>A real-time task management app with React, Node.js, MongoDB, and WebSocket for live updates.</p>
       <a href="https://github.com/Mahesh879022/task-app" target="_blank" class="cta-button">View on GitHub</a>
+    </div>
+  </div>
+  <div class="modal" id="project4">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h4>Serverless Data Pipeline</h4>
+      <p>Designed a serverless data pipeline with AWS Lambda, S3, and DynamoDB for efficient data processing.</p>
+      <a href="https://github.com/Mahesh879022/data-pipeline" target="_blank" class="cta-button">View on GitHub</a>
     </div>
   </div>
 
@@ -220,31 +272,35 @@
     <div class="contributions-grid">
       <div class="contribution-card">
         <h4>React Library Enhancement</h4>
-        <p>Contributed to a popular React library by adding new features and fixing bugs.</p>
+        <p>Added features and fixed bugs in a popular React library.</p>
         <a href="https://github.com/[repo]" target="_blank" class="cta-button">View Repository</a>
       </div>
       <div class="contribution-card">
         <h4>AWS SDK Documentation</h4>
-        <p>Improved AWS SDK documentation with clearer examples and use cases.</p>
+        <p>Improved AWS SDK docs with clearer examples.</p>
         <a href="https://github.com/[repo]" target="_blank" class="cta-button">View Repository</a>
       </div>
     </div>
   </section>
 
-  <!-- Blog Section -->
+  <!-- Blog Section with Carousel -->
   <section id="blog" class="section">
     <h3>Recent Blog Posts</h3>
-    <div class="blog-grid">
+    <div class="blog-carousel">
       <div class="blog-card">
         <h4>Journey into Microservices</h4>
-        <p>Explore the benefits and challenges of microservices architecture for scalable applications.</p>
+        <p>Learn about the power of microservices for scalable applications.</p>
         <a href="blog/microservices.html" class="read-more">Read More</a>
       </div>
       <div class="blog-card">
         <h4>CI/CD with AWS</h4>
-        <p>A guide to setting up automated CI/CD pipelines using Jenkins and AWS.</p>
+        <p>A guide to automated CI/CD pipelines with AWS.</p>
         <a href="blog/cicd.html" class="read-more">Read More</a>
       </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
     </div>
   </section>
 
@@ -256,13 +312,35 @@
         <p>"Mahesh’s expertise in microservices and AWS transformed our platform’s performance." - [Team Lead Name]</p>
       </div>
       <div class="testimonial-card">
-        <p>"His attention to detail and clean code practices are exceptional." - [Client Name]</p>
+        <p>"His clean code and problem-solving skills are exceptional." - [Client Name]</p>
+      </div>
+      <div class="testimonial-card">
+        <p>"A pleasure to work with, delivering high-quality solutions on time." - [Colleague Name]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>What technologies do you specialize in?</h4>
+        <p>I specialize in React, Spring Boot, AWS, Node.js, Docker, and Kubernetes, among others.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can you work on freelance projects?</h4>
+        <p>Yes, I’m open to freelance opportunities. Contact me to discuss your project!</p>
+      </div>
+      <div class="faq-item">
+        <h4>How do you ensure code quality?</h4>
+        <p>I follow best practices, write unit tests, and use code reviews to maintain high-quality code.</p>
       </div>
     </div>
   </section>
 
   <!-- Resume Section -->
-  <section id="resume" class="section">
+  <section id="resume" class="section light-bg">
     <h3>Resume</h3>
     <button class="cta-button preview-resume" data-modal="resumeModal">Preview Resume</button>
     <a href="assets/Resume_Mahesh.pdf" download class="cta-button">Download Resume (PDF)</a>
@@ -273,12 +351,12 @@
     <div class="modal-content">
       <span class="close">×</span>
       <h4>Resume Preview</h4>
-      <iframe src="assets/Resume_Mahesh.pdf" width="100%" height="500px"></iframe>
+      <iframe src="assets/Resume_Mahesh.pdf" width="100%" height="600px"></iframe>
     </div>
   </div>
 
   <!-- Contact Section -->
-  <section id="contact" class="section light-bg">
+  <section id="contact" class="section">
     <h3>Contact Me</h3>
     <form class="contact-form" id="contactForm">
       <input type="text" id="name" placeholder="Name" required>
@@ -291,18 +369,4 @@
       <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mahesh-babu-akula-87a859196" target="_blank">linkedin.com/in/mahesh-babu-akula</a></p>
       <p><i class="fab fa-github"></i> <a href="https://mahesh879022.github.io/Portfolio/" target="_blank">mahesh879022.github.io/Portfolio</a></p>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Mahesh Babu Akula. Built with <i class="fas fa-heart"></i> and passion.</p>
-  </footer>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <script src="main.js"></script>
-</body>
-</html>
+  </...
