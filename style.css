@@ -84,12 +84,13 @@ body {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: var(--shadow);
-  margin-bottom: 1.5rem;
   display: block;
+  margin: 0 auto;
   visibility: visible;
 }
 .hero h2 {
   font-size: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 .hero p {
@@ -227,6 +228,13 @@ body {
   color: var(--accent-color);
 }
 
+/* Resume Buttons */
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 /* Footer */
 .footer {
   text-align: center;
@@ -253,5 +261,9 @@ body {
   }
   .section h3 {
     font-size: 1.5rem;
+  }
+  .resume-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
