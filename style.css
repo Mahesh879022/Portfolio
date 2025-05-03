@@ -136,6 +136,8 @@ body {
   box-shadow: var(--shadow);
   margin-bottom: 2rem;
   animation: float 4s ease-in-out infinite;
+  display: block; /* Ensure image is visible */
+  visibility: visible;
 }
 .hero h2 {
   font-size: 3.5rem;
@@ -531,6 +533,10 @@ body {
   }
   .typewriter {
     font-size: 1.3rem;
+  }
+  .profile-img {
+    width: 10rem;
+    height: 10rem;
   }
   .timeline:before {
     left: 20px;
