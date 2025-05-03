@@ -57,9 +57,13 @@ window.addEventListener('load', () => {
   document.getElementById('loader').style.display = 'none';
 });
 
-// Lazy Loading
+// Lazy Loading and Profile Image Check
 document.querySelectorAll('img').forEach(img => {
   img.setAttribute('loading', 'lazy');
+  if (img.classList.contains('profile-img')) {
+    img.addEventListener('load', () => console.log('Profile image loaded successfully'));
+    img.addEventListener('error', () => console.error('Profile image failed to load'));
+  }
 });
 
 // GSAP Animations
